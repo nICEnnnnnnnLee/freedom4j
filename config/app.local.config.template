@@ -1,0 +1,26 @@
+# 指示该配置用于本地
+configType = local
+# 本地监听端口
+localPort = 80
+# 远程IP
+remoteHost = 127.0.0.1
+# 远程端口
+remotePort = 443
+# 用户名密码盐值(需要与服务器一致)
+salt = 4567
+username = admin
+password = admin
+
+# 国内ip是否直连
+dircectIfCN = false
+# 与远程的连接是否采用SSL
+useSSLRemote = true
+# 是否验证SSL证书
+verifySSLRemote = false
+
+# 用于用于伪装HTTP头部， 当SSL启用时，domain最好与证书SNI一致
+path = /
+http_version = 1.1
+domain = 127.0.0.1
+port = 5000
+userAgent = Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0

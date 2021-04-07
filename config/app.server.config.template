@@ -1,0 +1,24 @@
+# 指示该配置用于本地
+configType = remote
+
+# 监听端口
+port = 443
+# 用户名密码盐值(需要与服务器一致)
+salt = 4567
+# 是否使用SSL
+useSSL = true
+
+# SSL证书的相关配置，当SSL启用时有效
+sslCertPath = D:\\Workspace\\cert\\youdomain.pem
+sslKeyPath = D:\\Workspace\\cert\\youdomain.pkcs8
+
+# 自签名的域名，当SSL启用时且没有配置证书路径时有效
+# a fully qualified domain name
+#fqdn = www.baidu.com
+
+
+# 合法用户
+# 格式为 users.<用户名> = <密码>
+#users.admin = admin
+#users.username = pwd
+users.admin = admin
